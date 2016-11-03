@@ -1,6 +1,5 @@
 # https://pypi.python.org/pypi
 # 使用 pip3 install libname 安装第三方模块
-
 # pip3 install Pillow 这是Python下非常强大的处理图像的工具库
 
 from PIL import Image

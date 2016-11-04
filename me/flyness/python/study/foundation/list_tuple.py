@@ -22,3 +22,17 @@ print(names)
 
 L = [1, True, 'lizhitao']
 print(L)
+
+LL = [1, True, 'lizhitao', ['a', 'b', 'c'], 1.1]
+print(len(LL))
+
+L = []
+print(len(L))
+
+
+# tuple like readonly list
+names = ('张三', '李四', '王五')
+print(names)
+
+t = (1,)
+print(t)

@@ -31,12 +31,13 @@ class TestDeviceInfo(unittest.TestCase):
         print('--------------------------------------------- test comment app --------------------------------------')
         req = request.Request(
             self.url_prefix + '/products/' + self.product_key + '/threads/BBB1NPJD00014AED/app/comments')
-        req.add_header('User-Agent', 'NewsApp/17.0 iOS/10.1.1 NewsAppPro/17.0 (iPhone9,2)')
+        req.add_header('User-Agent', 'NewsApp/4.3.3 Android/5.0.1(SONY)')
 
         comment_data = parse.urlencode([
             ('urstoken', self.urs_token),
             ('ursid', self.urs_id),
-            ('body', '测试设备号')
+            ('body', '测试sony设备号'),
+            ('board', 'ent2_bbs')
         ])
 
         with request.urlopen(req, data=comment_data.encode('utf-8')) as f:
